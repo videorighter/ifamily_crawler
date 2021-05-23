@@ -2,7 +2,12 @@
 ## ifamily collaboration result
 
 본 크롤러는 아이패밀리와 함께하는 "화장품 소비자 분석 시스템 프로젝트"의 일환으로 개발되었으며, 초기 크롤러입니다. <br>
-고도화된 최신 크롤러는 내부 정보이므로 공유가 불가합니다.
+고도화된 최신 크롤러는 내부 정보이므로 공유가 불가합니다.<br><br>
+
+RBDMS를 사용한다면 각 크롤러마다 [is_db] argument를 True(default)로 설정하면 됩니다.<br>
+RBDMS 사용 설정은 db_model.py 코드에 있습니다.<br><br>
+
+기타 전처리 함수는 utils.py를 참조합니다.<br><br>
 
 ### 1. Youtube Crawler<br><br>
 >1. argument 입력<br>
