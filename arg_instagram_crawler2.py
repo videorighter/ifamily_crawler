@@ -27,8 +27,8 @@ if __name__ == "__main__":
     group.add_argument('-n', '--post_num', action='store_true', help='Crawling based on the post number.')
     group.add_argument('-d', '--post_date', action='store_true', help='Crawling based on the post date.')
 
-    parser.add_argument('keyword', type=str, help='Enter the keyword.')
-    parser.add_argument('option', help='Enter the post number or date of the post.')
+    parser.add_argument('--keyword', type=str, help='Enter the keyword.')
+    parser.add_argument('--option', help='Enter the post number or date of the post.')
 
     arg = parser.parse_args()
     keyword = arg.keyword
