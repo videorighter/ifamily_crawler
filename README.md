@@ -29,6 +29,9 @@ $ python3 youtube_crawler.py --keyword [KEYWORD] --is_db [True|False] --choose_p
 >--post_scroll_num : post(게시글) 수집 시 스크롤 다운 횟수<br>
 >--comment_scroll_num : comment(댓글) 수집 시 스크롤 다운 횟수<br><br>
 
+![image](https://user-images.githubusercontent.com/75473005/119261303-c1fd4900-bc11-11eb-8ad7-d591a5d1c2c4.png)
+
+
 ### 2. Instagram Crawler<br><br>
 유료 API 사용<br>
 API KEY는 개인 정보이므로 "insert key"로 대체<br>
@@ -66,6 +69,9 @@ $ python3 naver_crawler.py --keyword [KEYWORD] --is_db [True|False] --start_date
 >--start_date : 네이버블로그 검색 기간 중 시작 시점 입력 (default: 2021-01-01)<br>
 >--end_date : 네이버블로그 검색 기간 중 끝 시점 입력 (default: 2021-06-01)<br><br>
 
+![image](https://user-images.githubusercontent.com/75473005/119261280-a85c0180-bc11-11eb-910a-0dd27127b48b.png)
+
+
 ### 4. Glowpick Crawler<br><br>
 >1. argument 입력<br>
 >2. argument 기준대로 검색<br>
@@ -80,3 +86,6 @@ $ python3 glowpick_crawler.py --keyword [KEYWORD] --is_db [True|False]
 ```
 >--keyword : 크롤링 할 키워드 입력 (default: 틴트)<br>
 >--is_db : RDBMS 사용 여부 (default: True)<br>
+
+![image](https://user-images.githubusercontent.com/75473005/119261257-8ebaba00-bc11-11eb-8feb-c6d3f662b8f0.png)
+
