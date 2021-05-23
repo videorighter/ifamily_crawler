@@ -33,6 +33,13 @@ class glowpickcrawler():
 
     def get_post_info(self):
 
+        keyword = ''
+        for i, word in enumerate(self.args.keyword):
+            if i == 0:
+                keyword += word
+            else:
+                keyword += "%20" + word
+
         # db 사용 시
         # if self.args.is_db:
         #     row_id = self.db_model.set_daily_log(self.args.keyword, 4)
