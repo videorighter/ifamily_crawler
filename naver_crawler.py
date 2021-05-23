@@ -44,6 +44,7 @@ class navercrawler():
 
         first_url = f"https://section.blog.naver.com/Search/Post.nhn?pageNo=1&rangeType=PERIOD&orderBy=sim&startDate=" \
                     f"{self.args.start_date}&endDate={self.args.end_date}&keyword={keyword}"
+        print(first_url)
         chrome_options = wd.ChromeOptions()
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
@@ -64,11 +65,17 @@ class navercrawler():
             num = self.args.num
 
         # 검색 게시글 수 입력 -> 개수 맞게 페이지수 넘김 -> 해당 포스팅 링크 수집
-        for i in range(num // 7 + 1):
+        if num <= 7:
+            loop_num = 1
+        else:
+            loop_num = num//7+1
+
+        for i in range(loop_num):
 
             loop_url = f"https://section.blog.naver.com/Search/" \
                        f"Post.nhn?pageNo={i + 1}&rangeType=PERIOD&orderBy=sim&startDate=" \
                        f"{self.args.start_date}&endDate={self.args.end_date}&keyword={keyword}"
+
             driver.get(loop_url)
             time.sleep(3)
             elems = driver.find_elements_by_css_selector("a.desc_inner")
