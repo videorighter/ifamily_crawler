@@ -94,3 +94,5 @@ $ python3 glowpick_crawler.py --keyword [KEYWORD] --is_db [True|False]
 
 ![image](https://user-images.githubusercontent.com/75473005/119261257-8ebaba00-bc11-11eb-8feb-c6d3f662b8f0.png)
 
+## Crawling dataset
+![image](https://user-images.githubusercontent.com/75473005/119605807-5f33c980-be2c-11eb-921a-0bf50f3a1436.png)
